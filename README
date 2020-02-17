@@ -21,3 +21,4 @@ These are all the key points you need to be careful:
 5. Don't forget to change the itemId in "TaoBao("itemId")" to the corresponding itemId you have above
 6. Run it. You will get all the reviews after it finished. 
 
+NOTICE: This project was finished in 2020/2/18. All the reviews were until that day. 
