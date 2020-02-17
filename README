@@ -1,0 +1,23 @@
+This is a mini web crawler application for crawling taobao review automatically
+In order to use it, you need first have a valid taobao account, install "requests" already in your editor first.
+
+These are all the key points you need to be careful:
+1. You should replace the three parameters in "header": "cookie","referer","user-agent" to your own. It won't work if
+   you just use as same as mine. 
+2. How can I replace these there parameters?
+   i. You need first find the target items you want to crawl the reviews in taobao official website
+   ii. At the same time, please log in with your account 
+   iii. When you get into the product page, press "Fn","F12" at the same time (if you use Chrome) to show the developer 
+        tool
+   iv. Select "Network" in the navigator bar, then, click the "reviews" in the product page. 
+   v. You should find out that the developer page already have a lot of new stuff, go and find the element under "Name", start with
+      "list_detail_rate.htm". This is the review info that we want to find.
+   vi. Click "Headers" in the right pannel, scoll down to the "Requests Headers" section, copy and paste "cookie","referer",
+       "user-agent" from that to your code
+3. The five parameters in "params": "itemId", "sellerId", "currentPage", "order", "callback" should be changed to your own as well.
+        You can find the value of all of them except "order" just by scolling down to the "Query String Parameters" section. The "order" keywords
+        means the order you want to keep those contents, you can just keep it same as mine. 
+4. The next thing you need to change is the "searchNumber", this means how many pages you want to crawl
+5. Don't forget to change the itemId in "TaoBao("itemId")" to the corresponding itemId you have above
+6. Run it. You will get all the reviews after it finished. 
+
